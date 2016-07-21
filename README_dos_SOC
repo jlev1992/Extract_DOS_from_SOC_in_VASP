@@ -1,0 +1,7 @@
+Hello!
+
+This tool reads the DOSCAR file and the OUTCAR file from a VASP DFT+SOC calculation (LORBIT=11 must be activated in the INCAR file during the VASP calculation).This tool then asks the user for standard inputs such as the NEDOS (number of DOS grid points in INCAR), the full width at half height of the gaussian broadening (reccomended 0.3 for nice plots), and the number of ions in the POSCAR file.
+
+The tool then developes N_(atoms)+1 files labeled as ion_n.txt (where n is the ion number). n=0 is the total DOS, and n>=1 are the ion resolved density of states plots with s,p, and d orbitals included. 
+
+Happy computing!
